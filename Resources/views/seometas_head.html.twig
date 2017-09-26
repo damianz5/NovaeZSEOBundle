@@ -1,2 +1,5 @@
-{% include "NovaeZSEOBundle::seometas_metaslinks.html.twig" %}
+{% if content.contentInfo.mainLocationId %}
+    {% include "NovaeZSEOBundle::seometas_metaslinks.html.twig" %}
+{% endif %}
+
 {% include "NovaeZSEOBundle::seometas_ga.html.twig" %}
